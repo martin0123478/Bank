@@ -1,48 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="imagen">
-        <img class="logo" src="images/BBVA-logo.png" alt="logo">
-      </div>
-      <div class="icons">
-        <img class="notificacion" src="images/notificacion.png" alt="">
-        <img class="notificacion2" src="images/menu.png" alt="">
-      </div>
-  
-    </header>
-  
-    
-      
-        <aside class="menu">
-          <div class="imagen">
-            <img class="menu__person" src="images/bienvenida.png" alt="">
-          </div>
-          
-              <a href="" class="menu__opc op1">Listado de candidatos</a>
-              <a href="" class="menu__opc">Agregar candidato</a>
-            
-          
-        </aside>
-  
-        <div class="principal">
-          <div class="principal__cabecera">
-            <h2 class="principal__cabecera--titulo">Candidatos</h2>
-            <input class="principal__cabecera--input" type="text" name="" id="">
-          </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium repellat, corrupti ea incidunt illo, consectetur doloribus quia culpa atque accusamus, odio voluptatibus similique provident architecto aliquid dolorem non fugiat. Repellendus?</p>
-        </div>
-      
-    
-  </div>
-  
-</body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank Main</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <header class="header">
+                    <h1 class="header__logo">BBVA
+                      <img src="images/BBVA-logo.png" alt="logo">
+                    </h1>
+                    <div class="buttons">
+                        <button class="header__notification">
+                            <img class="notificacion" src="images/notificacion.png" alt="">
+                        </button>
+                        <button class="header__menu" id="header__menu">
+                            <span class="burguer"></span>
+                        </button>
+                    </div>
+                </header>
+                <div class="mainContent">
+                    <aside class="menu" id="menu">
+                        <div class="blackBack" id="blackBack"></div>
+                        <section class="menuContent">
+                            <div class="perfil">
+                                <div class="perfilImg">
+                                    <img src="" alt="">
+                                </div>
+                                <h2>¡Bienvenido Alan!</h2>
+                                <h6 class="area">Recursos Humanos</h6>
+                            </div>
+                            <nav>
+                                <a href="" class="menu__opc op1">Lista de candidatos</a>
+                                <a href="" class="menu__opc">Agregar candidato</a>
+                                <a href="" class="menu__opc">Opciones</a>
+                                <a href="" class="menu__opc">Carrar seción</a>
+                            </nav>
+                        </section>
+                    </aside>
+                    <section class="principal">
+                        <div class="principal__cabecera">
+                            <h2 class="principal__cabecera--titulo">Candidatos</h2>
+                            <input class="principal__cabecera--input" type="text" name="" id="">
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium repellat, corrupti ea incidunt illo, consectetur doloribus quia culpa atque accusamus, odio voluptatibus similique provident architecto aliquid dolorem non fugiat. Repellendus?</p>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <script>
+            var botonMenu = document.getElementById('header__menu');
+            var black = document.getElementById('blackBack');
+            var menu = document.getElementById('menu');
+            botonMenu.addEventListener('click',function(){
+                botonMenu.classList.add('openMenu');
+                menu.classList.add('open')
+            });
+
+            black.addEventListener('click',function(){
+                botonMenu.classList.remove('openMenu');
+                menu.classList.remove('open')
+            });
+        </script>
+    </body>
 </html>
