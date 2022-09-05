@@ -108,9 +108,17 @@ body{
  .header{
   height: 69px;
  }
+ .notificacion{
+  max-width: 35px;
+ }
  .notificacion2{
   
   display: inline;
+  max-width: 20px;
 }
+.logo{
+  max-width: 80px;
+}
+
 
 }
