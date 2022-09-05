@@ -3,6 +3,7 @@
   --color-secundario:#2C93E0;
   -color-botones:#0F74BE;
   -color-texto:#000000;
+  --text-menu:Droid Sans;
 }
 
 html {
@@ -32,6 +33,10 @@ body{
   grid-column: 1/6;
   background-color: var(--color-primario);
   height: 112px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 .menu{
   grid-column: 1/1;
@@ -40,7 +45,44 @@ body{
   height: 100%;
   width: 250px;
 }
+.menu__opc{
+  text-decoration: none;
+  color: white;
+  font-size: 1.9rem;
+  text-align: center;
+  height: 65px;
+  background-color: var(--color-primario);
+  width: 100%; 
+}
+.op1{
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.logo{
+  max-width: 125px;
+  margin-left: 25px;
+}
+.notificacion
+{
+  max-width: 100px;
+  margin-right: 25px;
+}
+.notificacion2{
+  max-width: 25px;
+  display: none;
+  margin-right: 25px;
+}
 
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  flex-wrap: wrap;
+}
+.menu__person{
+  padding: 10px;
+}
 
 
 
@@ -51,4 +93,9 @@ body{
  .header{
   height: 69px;
  }
+ .notificacion2{
+  
+  display: inline;
+}
+
 }
