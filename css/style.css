@@ -83,7 +83,22 @@ body{
 .menu__person{
   padding: 10px;
 }
-
+.principal{
+  grid-column: 2/6;
+  grid-row: 2/7;
+}
+.principal__cabecera{
+  height: 125px;
+  display: flex;
+  justify-content: space-around;
+}
+.principal__cabecera--titulo{
+  font-size: 2.4rem;
+}
+.principal__cabecera--input{
+  width: 125px;
+  height: 100px;
+}
 
 
 @media (max-width:768px) {
