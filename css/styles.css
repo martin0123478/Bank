@@ -268,13 +268,35 @@ button{
 }
 .menu__acordion a.acordion__opc{
     display: block;
-    padding: 1rem;
+    padding: .75rem 1rem .75rem 4.5rem;
     color: var(--color-terciario);
+    position: relative;
     transition: all ease-in-out .35s;
     border-width: 1px 1px 0 1px;
     border-style: solid;
     border-color: var(--color-terciario);
     background-color: var(--color-botones);
+}
+.menu__acordion a.acordion__opc::before{
+    content: '';
+    width: 1.125rem;
+    height: 1.125rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.menu__acordion a.acordion__opc.dashboard::before{
+    background-image: url(../images/dashboard.png);
+}
+.menu__acordion a.acordion__opc.grafico::before{
+    background-image: url(../images/graphic.png);
 }
 .menu__acordion a.acordion__opc:last-of-type{
     border-width: 1px 1px 1px 1px; 
