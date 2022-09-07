@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank Main</title>
+        
+        <link rel="stylesheet" href="../css/style-Form.css">
+        <link rel="stylesheet" href="../css/style-Header.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <header class="header">
+                    <h1 class="header__logo">BBVA
+                      <img src="../images/BBVA-logo.png" alt="logo">
+                    </h1>
+                    <div class="buttons">
+                        <button class="header__notification">
+                            <img class="notificacion" src="../images/notificacion.png" alt="">
+                        </button>
+                        <button class="header__menu" id="header__menu">
+                            <span class="burguer"></span>
+                        </button>
+                    </div>
+                </header>
+                <div class="mainContent">
+                    <aside class="menu" id="menu">
+                        <div class="blackBack" id="blackBack"></div>
+                        <section class="menuContent">
+                            <div class="perfil">
+                                <div class="perfilImg">
+                                    <img src="" alt="">
+                                </div>
+                                <h2>¡Bienvenido Giovanni!</h2>
+                                <h6 class="area">Entrevistador</h6>
+                            </div>
+                            <nav>
+                                <a href="" class="menu__opc op1">Lista de candidatos</a>
+                                <!-- <a href="" class="menu__opc">Agregar candidato</a> -->
+                                <a href="" class="menu__opc">Opciones</a>
+                                <a href="" class="menu__opc">Carrar seción</a>
+                            </nav>
+                        </section>
+                    </aside>
+                    <section class="principal">
+                      <!---->
+                      <section class="principal__cabecera">
+                        <h2 class="principal__cabecera--titulo"> Frontend Developer - Giovanni Olmos Salmones</h2>
+                      </section>
+                      <section>
+                        <form>
+                          <label for="Experiencia"> Experiencia </label> <br>
+                          <input type="text" id="Experiencia" placeholder="Experiencia laboral"/><br>
+                        
+                          <label for="Tecnologias"> Nivel de candidato </label> <br>
+                          <input type="text" id="Tecnologias" placeholder="Tecnologias y herramientas"/><br>
+                      
+                          <label for="Nivel_candidato"> Nivel de candidato </label> <br>
+                          <select type="text" id="Nivel_candidato">
+                            <option value="" selected >Seleciona un nivel</option>
+                            <option value="Programador junior">Programador junior</option>
+                            <option value="Programador semi senior">Programador semi senior</option>
+                            <option value="Programador senior">Programador senior</option>
+                          </select><br>
+                        
+                          <label > ¿Cumple con la vacante? </label> <br>
+                          <input type="radio" id="cumple_Si" name="cumple_vacante" value="Si"> <label for="html">Si</label>
+                          <input type="radio" id="cumple_No" name="cumple_vacante" value="No"> <label for="css">No</label> <br>
+                                  
+                          <label for="Nivel_candidato"> Observaciones </label> <br>
+                          <textarea id="Comentarios" name="comentarios" rows="10" cols="40" placeholder="Observaciones y comentarios"></textarea><br>
+                        
+                          <input type="submit" class="subir" href="" value="Subir resultados" > </input></p>
+                        </form>
+                      </section>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <script>
+            var botonMenu = document.getElementById('header__menu');
+            var black = document.getElementById('blackBack');
+            var menu = document.getElementById('menu');
+            botonMenu.addEventListener('click',function(){
+                botonMenu.classList.add('openMenu');
+                menu.classList.add('open')
+                
+            });
+
+            black.addEventListener('click',function(){
+                botonMenu.classList.remove('openMenu');
+                menu.classList.remove('open')
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank Main</title>
+        
+        <link rel="stylesheet" href="../css/style-Tabla.css">
+        <link rel="stylesheet" href="../css/style-Header.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <header class="header">
+                    <h1 class="header__logo">BBVA
+                      <img src="../images/BBVA-logo.png" alt="logo">
+                    </h1>
+                    <div class="buttons">
+                        <button class="header__notification">
+                            <img class="notificacion" src="../images/notificacion.png" alt="">
+                        </button>
+                        <button class="header__menu" id="header__menu">
+                            <span class="burguer"></span>
+                        </button>
+                    </div>
+                </header>
+                <div class="mainContent">
+                    <aside class="menu" id="menu">
+                        <div class="blackBack" id="blackBack"></div>
+                        <section class="menuContent">
+                            <div class="perfil">
+                                <div class="perfilImg">
+                                    <img src="" alt="">
+                                </div>
+                                <h2>¡Bienvenido Giovanni!</h2>
+                                <h6 class="area">Entrevistador</h6>
+                            </div>
+                            <nav>
+                                <a href="" class="menu__opc op1">Lista de candidatos</a>
+                                <!-- <a href="" class="menu__opc">Agregar candidato</a> -->
+                                <a href="" class="menu__opc">Opciones</a>
+                                <a href="" class="menu__opc">Carrar seción</a>
+                            </nav>
+                        </section>
+                    </aside>
+                    <section class="principal">
+                      <!-- -->
+                      <section class="principal__cabecera">
+                        <div class="div_cabecera_titulo">
+                          <h2 class="principal__cabecera--titulo">Candidatos</h2>
+                        </div>
+                        <div class="div_cabecera_cabecera">
+                          <img class="Icon-search" src="../images/lupa.png"/>
+                          <input class="principal__cabecera--input" type="text" src="images/lupa.png" placeholder="Buscar candidato..." />
+                        </div>
+                    </section>
+            
+                    <!-- Tabla entrevistador -->
+                      <section class="section_table">
+                        <table class="tabla_Candidatos">
+                          <caption></caption>
+                            <thead>
+                                <tr>
+                                    <th class="Nombre_Col">   Nombre   <img class="Icon_flecha_candidatos" src="images/flecha.png" /> </th>
+                                    <th class="Posicion_Col"> Posicion <img class="Icon_flecha_candidatos" src="images/flecha.png" /> </th>
+                                    <th class="Registro_Col" >Registro <img class="Icon_flecha_candidatos" src="images/flecha.png" /> </th>
+                                    <th class="Estatus_Col">  Estatus  <img class="Icon_flecha_candidatos" src="images/flecha.png" /> </th>
+                                    <th class="Boton_Col"><!-- Botones --></th>
+                                    <tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row-candidato">
+                                    <td class="Nombre_Col">Alan Josue López López</td>
+                                    <td class="Posicion_Col">Frontend Developer</td>
+                                    <td class="Registro_Col">22/08/2022</td>
+                                    <td class="Estatus_Col">Por revisar</td>
+                                    <td class="Boton_Col"><button class="button_candidatos" type="submit"><img class="Icon_button_candidatos" src="../images/ver.png" /> Ver perfil </button></td>
+                                </tr>
+                                <tr class="row-candidato">
+                                    <td class="Nombre_Col">Jorge Aguilar Hernandez</td>
+                                    <td class="Posicion_Col">Frontend Developer</td>
+                                    <td class="Registro_Col">25/08/2022</td>
+                                    <td class="Estatus_Col">Por revisar</td>
+                                    <td class="Boton_Col"><button class="button_candidatos" type="submit"><img class="Icon_button_candidatos" src="../images/ver.png" /> Ver perfil </button></td>
+                                </tr>
+                                <tr class="row-candidato">
+                                    <td class="Nombre_Col">Set Reyes Sandoval</td>
+                                    <td class="Posicion_Col">Frontend Developer</td>
+                                    <td class="Registro_Col">20/08/2022</td>
+                                    <td class="Estatus_Col">En revisión</td>
+                                    <td class="Boton_Col"><button class="button_candidatos" type="submit"><img class="Icon_button_candidatos" src="../images/edit.png" /> Editar </button></td>
+                                </tr>
+                                <tr class="row-candidato">
+                                  <td class="Nombre_Col">Giovanni Olmos salmones</td>
+                                  <td class="Posicion_Col">Frontend Developer</td>
+                                  <td class="Registro_Col">05/09/2022</td>
+                                  <td class="Estatus_Col">En revisión</td>
+                                  <td class="Boton_Col"><button class="button_candidatos" type="submit"><img class="Icon_button_candidatos" src="../images/edit.png" /> Editar </button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </section>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <script>
+            var botonMenu = document.getElementById('header__menu');
+            var black = document.getElementById('blackBack');
+            var menu = document.getElementById('menu');
+            botonMenu.addEventListener('click',function(){
+                botonMenu.classList.add('openMenu');
+                menu.classList.add('open');
+                
+            });
+
+            black.addEventListener('click',function(){
+                botonMenu.classList.remove('openMenu');
+                menu.classList.remove('open')
+            });
+
+        </script>
+    </body>
+</html>

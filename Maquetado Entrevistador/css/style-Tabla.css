@@ -1,0 +1,270 @@
+/* Tabla */
+
+.principal__cabecera{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap; 
+}
+
+.div_cabecera_titulo{
+  width: 500px;
+  height: 60px;
+
+  /*Pos texto candidatos*/
+  padding-top: 20px;
+}
+
+.div_cabecera_cabecera{
+  display: flex;
+  
+  height: 60px;
+  width: 630px;
+  padding-left: 120px;
+ 
+  
+}
+
+.principal__cabecera--titulo{  
+  padding-left: 20px;
+  font-size: 1.49rem;
+}
+
+.principal__cabecera--input {
+  
+  margin-top: 15px;
+  width: 550px;
+  height: 30px;
+  border-radius: 20px;
+  
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 30 ;
+  padding-left: 25px;
+  
+
+  background-color: #DADADA;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Icon-search {
+  position: relative;
+  top: 20px;
+  left: 25px;
+  /* Tam. lupa */
+  width: 20px;
+  height: 20px;
+}
+  
+/* Empieza CSS de la tabla*/
+.section_table{
+  /* Section tabala */
+  width: 100%;
+  height: 541px;
+  display: flex;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabla_Candidatos {
+  /* Tam. table*/
+  width: 100%;
+  height:230px;
+  /* Pos. encabezado*/
+  margin-top: 20px;
+  /* Col sombreadas*/
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tabla_Candidatos tbody tr:hover{
+  background-color: gray;
+}
+
+thead th{
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Aqui */
+
+th{
+  padding-left: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Icon_flecha_candidatos{
+  width: 11px;
+  height: 6px;
+  
+  /* Pos Flecha*/
+  margin-left: 70px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+
+}
+
+.row-candidato{
+  background-color: #EEEEEE;
+  border: 5px solid white;
+}
+
+.button_candidatos:hover {
+  background: var(--color-primario);
+}
+
+.button_candidatos:active {
+  transform: scale(0.95);
+}
+
+
+td {
+  font-size: 15px;
+  text-align: left;
+
+  padding-left: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.button_candidatos{
+  /* Texto */
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff; 
+
+	/* Boton */
+  background-color: var(--color-botones);
+  width: 142px;
+  height: 25px;
+
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+	/* Imagen - Boton */
+.Icon_button_candidatos{
+  width: 22px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+
+
+@media screen and (max-width:1170px) {
+  .button_candidatos{
+    /* Texto */
+    font-weight: 400;
+    font-size: 10px;
+    color: #fff; 
+  
+    /* Boton */
+    background-color: var(--color-botones);
+    width: 80px;
+    height: 25px;
+  
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    /* Imagen - Boton */
+  .Icon_button_candidatos{
+    width: 15px;
+    height: 12px;
+    margin-right: 5px;
+  } 
+  .div_cabecera_cabecera{
+    padding-left: 0px;
+    padding-right: 20px;
+    width: 100%;
+    
+  }
+  .principal__cabecera--input{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .Estatus_Col {
+    display: none;
+  }
+ 
+}
+
+@media screen and (max-width:768px) {
+  .menu{
+    display: none;
+  }
+
+  .header{
+    height: 69px;
+  }
+
+  .notificacion{
+    max-width: 35px;
+  }
+
+  .notificacion2{
+    display: inline;
+    max-width: 20px;
+  }
+
+  .logo{
+    max-width: 80px;
+  }
+
+  .principal__cabecera--titulo {
+    width: 40%;
+  }
+
+  .principal__cabecera--input {
+    width: 80%;
+    margin-left: -20px;
+  }
+
+  /* Icon lupa */
+  .Icon-search {
+    position: relative;
+    top: 20px;
+    left: 5px;
+  }
+
+  .Registro_Col {
+    display: none;
+  }
+
+  .Estatus_Col {
+    display: none;
+  }
+
+  .div_cabecera_cabecera{
+    padding-left: 20px;
+  }
+
+  .principal__cabecera--input{
+    width: 100%;
+  }
+
+
+}
+
+/* ------------------ */
