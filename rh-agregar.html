@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agregar Candidato</title>
+        <link rel="stylesheet" href="css/rh-styles.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <header class="header">
+                    <h1 class="header__logo">BBVA
+                      <img src="images/BBVA-logo.png" alt="logo">
+                    </h1>
+                    <div class="buttons">
+                        <button class="header__notification">
+                            <img class="notificacion" src="images/notificacion.png" alt="">
+                        </button>
+                        <button class="header__menu" id="header__menu">
+                            <span class="burguer"></span>
+                        </button>
+                    </div>
+                </header>
+                <div class="mainContent">
+                    <aside class="menu" id="menu">
+                        <div class="blackBack" id="blackBack"></div>
+                        <section class="menuContent">
+                            <div class="perfil">
+                                <div class="perfilImg">
+                                    <img src="" alt="">
+                                </div>
+                                <h2>¡Bienvenido Alan!</h2>
+                                <h6 class="area">Recursos Humanos</h6>
+                            </div>
+                            <nav>
+                                <a href="rh-tabla.html" class="menu__opc op1">Lista de candidatos</a>
+                                <a href="rh-agregar.html" class="menu__opc">Agregar candidato</a>
+                              
+                                <a href="" class="menu__opc">Carrar seción</a>
+                            </nav>
+                        </section>
+                    </aside>
+                   <div class="principal">
+          <div class="cabecera">
+            <h2 class="principal__cabecera--titulo">Candidatos</h2>
+                <div class="formulario">
+                    <div class="campo">
+                        <label for="">Nombre</label>
+                        <input class="form-input" type="text" >
+                    </div>
+                   <div class="campos">
+                    <div class="campo">
+                        <label for="">Posición</label>
+                    <input class="form-input" type="text" name="" id="">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="">Entrevistador</label>
+                    <input class="form-input" type="text">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="">Fecha de entrevista</label>
+                    <input class="form-input" type="text">
+                    </div>
+                    <div class="campo">
+                        <input class="button" type="" value="Curriculum Vitae">
+                    </div>
+                    <div class="campo">
+                       <input class="button" type="submit" value="Enviar">
+                    </div>
+                    
+                   </div>
+                   
+                    
+                </div>
+            
+          </div>
+          
+
+        </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            var botonMenu = document.getElementById('header__menu');
+            var black = document.getElementById('blackBack');
+            var menu = document.getElementById('menu');
+            botonMenu.addEventListener('click',function(){
+                botonMenu.classList.add('openMenu');
+                menu.classList.add('open')
+            });
+
+            black.addEventListener('click',function(){
+                botonMenu.classList.remove('openMenu');
+                menu.classList.remove('open')
+            });
+        </script>
+    </body>
+</html>
