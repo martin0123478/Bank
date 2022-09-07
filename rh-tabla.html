@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank Main</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/rh-styles.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <header class="header">
+                    <h1 class="header__logo">BBVA
+                      <img src="images/BBVA-logo.png" alt="logo">
+                    </h1>
+                    <div class="buttons">
+                        <button class="header__notification">
+                            <img class="notificacion" src="images/notificacion.png" alt="">
+                        </button>
+                        <button class="header__menu" id="header__menu">
+                            <span class="burguer"></span>
+                        </button>
+                    </div>
+                </header>
+                <div class="mainContent">
+                    <aside class="menu" id="menu">
+                        <div class="blackBack" id="blackBack"></div>
+                        <section class="menuContent">
+                            <div class="perfil">
+                                <div class="perfilImg">
+                                    <img src="" alt="">
+                                </div>
+                                <h2>¡Bienvenido Alan!</h2>
+                                <h6 class="area">Recursos Humanos</h6>
+                            </div>
+                            <nav>
+                                <a href="rh-tabla.html" class="menu__opc op1">Lista de candidatos</a>
+                                <a href="rh-agregar.html" class="menu__opc">Agregar candidato</a>
+                              
+                                <a href="" class="menu__opc">Carrar seción</a>
+                            </nav>
+                        </section>
+                    </aside>
+                   <div class="principal">
+          <div class="principal__cabecera ">
+            <h2 class="principal__cabecera--titulo">Candidatos</h2>
+            <div>
+              <input class="principal__cabecera--input"
+
+             type="search"
+             placeholder=" "
+             >
+            </div>
+            
+          </div>
+          <div class="tabla">
+            
+              <div class="titulo">
+                <p>Nombre
+                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+                </p>
+              </div>
+  
+              <div class="titulo item1">
+                <p>Posición
+                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+  
+                </p>
+              </div>
+  
+              <div class="titulo item1">
+                <p>Entrevistador
+                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+  
+                </p>
+              </div>
+              <div class="titulo">
+                <p>Estatus
+                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+  
+                </p>
+              </div>
+              <div class="titulo">
+                <p>Fecha de entrevista
+                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+  
+                </p>
+              </div>
+              <div class="titulo item1">
+               <p></p>
+              </div>
+            
+            
+              <div class="item">
+                <p>Jorge Aguilar </p>
+              </div>
+  
+              <div class="item item1">
+                <p>Frontend Developer</p>
+              </div>
+              <div class="item item1">
+                <p>Luis Flores</p>
+              </div>
+              <div class="item">
+                <p>Entrevistado</p>
+              </div>
+              <div class="item">
+               <p>03/09/22</p>
+              </div>
+              <div class="item item1">
+               <img class="tabla__borrar" src="images/Delete.png" alt="">
+               </div>
+  
+            
+            
+              <div class="item">
+                <p>Set Reyes </p>
+              </div>
+  
+              <div class="item item1">
+                <p>Frontend Developer</p>
+              </div>
+              <div class="item item1">
+                <p>Laura Gomez</p>
+              </div>
+              <div class="item">
+                <p>Entrevistado</p>
+              </div>
+              <div class="item ">
+               <p>03/09/22</p>
+              </div>
+              <div class="item item1">
+               <img class="tabla__borrar" src="images/Delete.png" alt="">
+               </div>
+            </div>
+  
+            
+             
+
+          
+
+        </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            var botonMenu = document.getElementById('header__menu');
+            var black = document.getElementById('blackBack');
+            var menu = document.getElementById('menu');
+            botonMenu.addEventListener('click',function(){
+                botonMenu.classList.add('openMenu');
+                menu.classList.add('open')
+            });
+
+            black.addEventListener('click',function(){
+                botonMenu.classList.remove('openMenu');
+                menu.classList.remove('open')
+            });
+        </script>
+    </body>
+</html>
