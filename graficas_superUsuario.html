@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bank Main</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles_graficas.css">
+        <link rel="stylesheet" href="css/pieChart.css">
+        <link rel="stylesheet" href="css/barChart.css">
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/pareto.js"></script>
     </head>
     <body>
         <main>
@@ -49,12 +54,13 @@
                         </section>
                     </aside>
                     <section class="principal graficos">
-                        <div class="grafica graficaPie">
-                            <img src="images/grafica_pie.png" alt="">
-                        </div>
-                        <div class="grafica graficaBarras">
-                            <img src="images/grafica_barras.png" alt="">
-                        </div>
+                        <div class="grafica graficaPie" id="graficaPie"></div>
+                        <div class="grafica graficaBarras" id="graficaBarra"></div>
+                    </section>
+                    <section class="menuOpcionesEdicion">
+                        <button class="opn_registro menuOpn">Menu <span class="burguer"></span></button>
+                        <button class="opn_registro roundButton agregar">Agregar</button>
+                        <button class="opn_registro roundButton eliminar">Eliminar</button>
                     </section>
                 </div>
             </div>
@@ -83,7 +89,8 @@
                     btn.classList.toggle('open');
                 });
             }
-            console.log(btnAcordion);
         </script>
+        <script src="js/pieChart.js"></script>
+        <script src="js/barChart.js"></script>
     </body>
 </html>

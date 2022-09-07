@@ -5,6 +5,7 @@
     --color-terciario:#FFFFFF;
     --color-botones:#0F74BE;
     --color-botones-hov:#52BCEC;
+    --color-red:#FF0000;
     -color-texto:#000000;
     --text-menu:Droid Sans;
   }
@@ -87,14 +88,14 @@ button{
     display: none;
     position: relative;
 }
-.header .buttons button.header__menu .burguer,
-.header .buttons button.header__menu .burguer::before,
-.header .buttons button.header__menu .burguer::after{
+.header .buttons button.header__menu .burguer, .menuOpn .burguer,
+.header .buttons button.header__menu .burguer::before, .menuOpn .burguer::before,
+.header .buttons button.header__menu .burguer::after, .menuOpn .burguer::after{
     width: 75%;
     height: 2px;
     background-color: var(--color-terciario);
 }
-.header .buttons button.header__menu .burguer{
+.header .buttons button.header__menu .burguer,  .menuOpn .burguer{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -104,8 +105,8 @@ button{
     transform: translate(-50%, -50%);
     transition: all ease-in-out .35s;
 }
-.header .buttons button.header__menu .burguer::before,
-.header .buttons button.header__menu .burguer::after{
+.header .buttons button.header__menu .burguer::before,  .menuOpn .burguer::before,
+.header .buttons button.header__menu .burguer::after,  .menuOpn .burguer::after{
     content: '';
     width: 100%;
     position: absolute;
@@ -148,6 +149,7 @@ button{
     min-width: 282px;
     min-height: calc(100vh - 72px);
     position: relative;
+    z-index: 20;
 }
 .blackBack{
     width: 100%;
@@ -311,25 +313,80 @@ button{
     max-height: calc(100vh - 72px);
     overflow-y: scroll;
 }
-.grafica{
+.menuOpcionesEdicion{
     width: 100%;
-    max-width: 350px;
-    display: block;
-    margin: 0 auto 2rem;
+    padding: .75rem .5rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primario);
 }
-.grafica:last-of-type{
-    margin: 0 auto;
+.menuOpcionesEdicion .opn_registro{
+    width: 56px;
+    height: 56px;
+    margin: 0 10%;
+    display: inline-flex;
+    position: relative;
+    font-size: 0;
+    /*background: red;*/
 }
-.grafica img{
-    max-width: 100%;
+.menuOpcionesEdicion .opn_registro.roundButton{
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    overflow: hidden;
 }
-.grafica.graficaPie{
-    min-height: 248px;
-    max-height: 248px;
+.menuOpn .burguer::before{
+    top: 12px;
 }
-.grafica.graficaBarras{
-    min-height: 212px;
-    max-height: 212px;
+.menuOpn .burguer::after{
+    top: -12px;
+}
+.menuOpcionesEdicion .opn_registro.roundButton.agregar{
+    border-color:  var(--color-terciario);
+}
+.menuOpcionesEdicion .opn_registro.roundButton.eliminar{
+    border-color:  var(--color-red);
+}
+.menuOpcionesEdicion .opn_registro.roundButton::before, .menuOpcionesEdicion .opn_registro.roundButton::after{
+    content: '';
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.menuOpcionesEdicion .opn_registro.roundButton.agregar::before, .menuOpcionesEdicion .opn_registro.roundButton.agregar::after{
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: var(--color-terciario);
+}
+.menuOpcionesEdicion .opn_registro.roundButton.agregar::after{
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+    -moz-transform: translate(-50%, -50%) rotate(90deg);
+    -ms-transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.menuOpcionesEdicion .opn_registro.roundButton.eliminar::before{
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -moz-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: var(--color-red);
+}
+.menuOpcionesEdicion .opn_registro.roundButton.eliminar::after{
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: var(--color-red);
 }
 @media only screen and (max-width:768px){
     .menu{
@@ -364,10 +421,16 @@ button{
     .header .buttons button.header__menu .burguer::after{
         top: 7px;
     }
+    .menuOpcionesEdicion{
+        display: flex;
+    }
 }
 
 @media only screen and (max-width:500px){
     .menuContent{
         max-width: 80%;     
+    }
+    .menuOpcionesEdicion .opn_registro{
+        margin: 0 2rem;
     }
 }
