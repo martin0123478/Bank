@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../fonts/DroidSans-Bold.eot');
+    src: url('../fonts/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidSans-Bold.woff2') format('woff2'),
+        url('../fonts/DroidSans-Bold.woff') format('woff'),
+        url('../fonts/DroidSans-Bold.ttf') format('truetype'),
+        url('../fonts/DroidSans-Bold.svg#DroidSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../fonts/DroidSans.eot');
+    src: url('../fonts/DroidSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidSans.woff2') format('woff2'),
+        url('../fonts/DroidSans.woff') format('woff'),
+        url('../fonts/DroidSans.ttf') format('truetype'),
+        url('../fonts/DroidSans.svg#DroidSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 :root{
     --color-primario:#01599B;
     --color-primario-light:rgba(1,89,155,.5);
@@ -14,13 +39,13 @@
     padding: 0;
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Droid Sans', 'Arial Narrow', Arial, sans-serif;
 	font-weight: normal;
 	color: #606060;
 }
 b, strong{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-weight: 600;
+    font-family: 'Droid Sans', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
 	font-weight: bold\9;
 }
 h1, h1, h3, h4, h5, h6, span, p, b, a, li, br, label{
@@ -34,12 +59,12 @@ img{
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
 	Body {
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; !important;
+		font-family: 'Droid Sans', 'Arial Narrow', Arial, sans-serif; !important;
 	}
 	
 	b {
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; !important;
-		font-weight: 600 !important;
+		font-family: 'Droid Sans', 'Arial Narrow', Arial, sans-serif; !important;
+		font-weight: bold !important;
 	}
 }
 html {
@@ -57,20 +82,20 @@ button{
 }
 .header{
     padding: 1rem;
-    height: 72px;
+    height: 79px;
     display:flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-primario);
 }
 .header h1{
-    max-width: 120px;
+    max-width: 138px;
     font-size: 0;
     line-height: 1px;
 }
 .header .buttons button{
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     margin: 0 .5rem;    
     display: inline-flex;
     justify-content: center;
@@ -92,6 +117,7 @@ button{
 .header .buttons button.header__menu .burguer::before, .menuOpn .burguer::before,
 .header .buttons button.header__menu .burguer::after, .menuOpn .burguer::after{
     width: 75%;
+    max-width: 38px;
     height: 2px;
     background-color: var(--color-terciario);
 }
@@ -114,7 +140,7 @@ button{
     transition: all ease-in-out .35s;
 }
 .header .buttons button.header__menu .burguer::before{
-    top: -7px;
+    top: -9px;
 }
 .header .buttons button.header__menu .burguer::after{
     top: 6px;
@@ -147,7 +173,7 @@ button{
 .menu{
     width: 20%;
     min-width: 282px;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 79px);
     position: relative;
     z-index: 20;
 }
@@ -161,7 +187,7 @@ button{
     opacity: 0;
 }
 .menuContent{
-    height: calc(100vh - 72px);
+    height: calc(100vh - 79px);
     position: relative;
     background-color: var(--color-secundario);
     z-index: 10;
@@ -171,8 +197,8 @@ button{
     text-align: center;
 }
 .perfilImg{
-    width: 100px;
-    height: 100px;
+    width: 108px;
+    height: 108px;
     margin: 0 auto .75rem;
     display: block;
     border-radius: 100%;
@@ -185,12 +211,15 @@ button{
 }
 .perfil h2{
     color:  var(--color-terciario);
-    font-size: 1.5rem;
-    font-weight: normal;
+    font-size: 1.1875rem;
+    line-height: 1.375rem;
+    font-weight: bold;
 }
 .perfil h6{
-    font-size: 1.125rem;
+    margin: .25rem auto 0;
     color: var(--color-terciario);
+    font-size: 0.875rem;
+    line-height: 1.375;
 }
 .menu nav{
     margin: 0 auto;
@@ -200,15 +229,18 @@ button{
     margin: 0 auto.5rem;
     display: block;
     color: var(--color-terciario);
-    font-size: 1.12rem;
+    font-size: 1.1875rem;
+    line-height: 1.375rem;
     font-weight: normal;
     transition: all ease-in-out .35s;
     background-color: var(--color-primario);
 }
 .menu nav a.menu__opc.acordion_tit{
-    padding: 1rem 1rem 1rem 2.5rem;
+    padding: 1.188rem 1rem 1.188rem 2.5rem;
     margin: 0 auto;
     position: relative;
+    font-size: 1.1875rem;
+    font-weight: bold;
 }
 .menu nav a.menu__opc.acordion_tit::before{
     content: '';
@@ -237,8 +269,8 @@ button{
 }
 .menu nav a.menu__opc:last-of-type{
     margin: 0;
-    padding: 1rem 2.5rem 1rem 1rem;
-    bottom: 1rem;
+    padding: 0 2.5rem 0 1rem;
+    bottom: .75rem;
     position: absolute;
     background: none;
 }
@@ -270,21 +302,23 @@ button{
 }
 .menu__acordion a.acordion__opc{
     display: block;
-    padding: .75rem 1rem .75rem 4.5rem;
+    padding: 1.188rem 1rem 1.188rem 3.5rem;
     color: var(--color-terciario);
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     position: relative;
     transition: all ease-in-out .35s;
-    border-width: 1px 1px 0 1px;
+    border-width: 1px 0 0 0;
     border-style: solid;
     border-color: var(--color-terciario);
     background-color: var(--color-botones);
 }
 .menu__acordion a.acordion__opc::before{
     content: '';
-    width: 1.125rem;
-    height: 1.125rem;
+    width: 1rem;
+    height: 1rem;
     position: absolute;
-    left: 2.5rem;
+    left: 2rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -301,7 +335,10 @@ button{
     background-image: url(../images/graphic.png);
 }
 .menu__acordion a.acordion__opc:last-of-type{
-    border-width: 1px 1px 1px 1px; 
+    border-width: 1px 0 1px 0; 
+}
+.menu__acordion.acordion_rh .acordion__opc.dashboard{
+    font-size: 1rem;
 }
 .menu__acordion a.acordion__opc:hover{
     background-color: var(--color-botones-hov);
@@ -309,8 +346,8 @@ button{
 .principal{
     padding: 2rem;
     width: 80%;
-    min-height: calc(100vh - 72px);
-    max-height: calc(100vh - 72px);
+    min-height: calc(100vh - 79px);
+    max-height: calc(100vh - 79px);
     overflow-y: scroll;
 }
 .menuOpcionesEdicion{
@@ -419,7 +456,7 @@ button{
         width: 100%;
     }
     .header .buttons button.header__menu .burguer::after{
-        top: 7px;
+        top: 9px;
     }
     .menuOpcionesEdicion{
         display: flex;
@@ -428,9 +465,15 @@ button{
 
 @media only screen and (max-width:500px){
     .menuContent{
-        max-width: 80%;     
+        max-width: 70%;     
     }
     .menuOpcionesEdicion .opn_registro{
         margin: 0 2rem;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .menuContent{
+        max-width: 80%;     
     }
 }

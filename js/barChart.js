@@ -43,6 +43,12 @@ Highcharts.chart('graficaBarra', {
             format: "{value}%"
         }
     }],
+    plotOptions: {
+        series: {
+            showInLegend: false
+            // general options for all series
+        }
+    },
     series: [{
         type: 'pareto',
         name: 'Pareto',
@@ -55,7 +61,7 @@ Highcharts.chart('graficaBarra', {
             valueSuffix: '%'
         }
     }, {
-        name: 'Complaints',
+        name: 'Entrevistados',
         type: 'column',
         color: 'grey',
         zIndex: 2,
