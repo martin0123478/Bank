@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style-login.css">
 </head>
 <body>
-    <img class="img" src="../images/BBVA-logo.png">
-    <h1 class="titulo">Login</h1>
+    <header class="header">
+        <h1 class="header__logo">BBVA
+          <img src="../images/BBVA-logo.png" alt="logo">
+        </h1>
+    </header>
+    <h2 class="titulo">Login</h2>
     <div class="content">
         <div class="container">
             <form class="formulario">
-                <img class="user" src="../images/user-icon.png">
-                <br>
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <div class="">
+                    <img class="user" src="../images/user-icon.png">
+                </div>
+                <div class="campos">
+                    <label for="email" class="label">Email</label>
+                    <input type="text" placeholder="Email" id="email">
+                    <label for="password" class="label password">Password</label>
+                    <input type="password" placeholder="Password" id="">
+                </div>
                 <input type="submit" class="boton" value="Ingresar">
             </form>
-
-            <img src="../images/login.png" class="imagen">
+            <div class="imagenApoyo">
+                <img src="../images/login.png">
+            </div>
         </div>
     </div>
 </body>
-</html
+</html>
