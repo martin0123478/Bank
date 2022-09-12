@@ -1,0 +1,22 @@
+{
+  "candidatos": [
+    {
+      "id": 1,
+      "nombre": "Martín Aguilar",
+      "posicion":"Frontend Developer",
+      "entrevistador":"Juan Lopez",
+      "estatus":"Aceptado",
+      "Fecha de entrevista":"12/10/22"
+    },
+    {
+      "id": 1,
+      "nombre": "Set Reyes",
+      "posicion":"Frontend Developer",
+      "entrevistador":"María Gómez",
+      "estatus":"Aceptado",
+      "Fecha de entrevista":"15/10/22"
+    }
+    
+  ],
+  
+}
