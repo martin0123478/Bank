@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "candidatos": [
+    {
+      "id": 1,
+      "nombre": "Martín Aguilar",
+      "posicion": "Frontend Developer",
+      "entrevistador": "Juan Lopez",
+      "estatus": "Aceptado",
+      "fecha": "12/10/22"
+    },
+    {
+      "id": 2,
+      "nombre": "Set Reyes",
+      "posicion": "Frontend Developer",
+      "entrevistador": "María Gómez",
+      "estatus": "Aceptado",
+      "fecha": "15/10/22"
+    }
+  ]
+}

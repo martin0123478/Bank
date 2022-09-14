@@ -8,17 +8,18 @@
         <link rel="stylesheet" href="../css/estilos-generales.css">
 
         <link rel="stylesheet" href="../css/rh-styles.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     </head>
     <body>
         <main>
             <div class="container">
                 <header class="header">
                     <h1 class="header__logo">BBVA
-                      <img src="images/BBVA-logo.png" alt="logo">
+                      <img src="../images/BBVA-logo.png" alt="logo">
                     </h1>
                     <div class="buttons">
                         <button class="header__notification">
-                            <img class="notificacion" src="images/notificacion.png" alt="">
+                            <img class="notificacion" src="../images/notificacion.png" alt="">
                         </button>
                         <button class="header__menu" id="header__menu">
                             <span class="burguer"></span>
@@ -47,31 +48,32 @@
                    <div class="principal">
           <div class="cabecera">
             <h2 class="principal__cabecera--titulo">Candidatos</h2>
-                <div class="formulario">
+                <div class="formulario" id="form">
                     <div class="campo">
                         <label for="">Nombre</label>
-                        <input class="form-input" type="text" >
+                        <input class="form-input" type="text" id="nombre" >
                     </div>
                    <div class="campos">
                     <div class="campo">
                         <label for="">Posición</label>
-                    <input class="form-input" type="text" name="" id="">
+                    <input class="form-input" type="text" name="" id="posicion">
                     </div>
                     
                     <div class="campo">
                         <label for="">Entrevistador</label>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="text" id="entrevistador">
                     </div>
                     
                     <div class="campo">
                         <label for="">Fecha de entrevista</label>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="date" id="fecha">
                     </div>
                     <div class="campo">
-                        <input class="button" type="" value="Curriculum Vitae">
+                        <label for="">Estatus</label>
+                        <input class="form-input" type="text"  id="estatus">
                     </div>
                     <div class="campo">
-                       <input class="button" type="submit" value="Enviar">
+                       <input class="button" type="button" value="Enviar" id="guardar" >
                     </div>
                     
                    </div>
@@ -86,6 +88,9 @@
                 </div>
             </div>
         </main>
+<script src="../js/rh-tabla.js" type="module"></script>
+        <script  src="../js/rh-agregar.js" type="module"></script>
+        <!-- <script type="module" src="../js/API.js"></script> -->
         <script>
             var botonMenu = document.getElementById('header__menu');
             var black = document.getElementById('blackBack');

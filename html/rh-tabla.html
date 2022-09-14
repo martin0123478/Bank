@@ -15,11 +15,11 @@
             <div class="container">
                 <header class="header">
                     <h1 class="header__logo">BBVA
-                      <img src="images/BBVA-logo.png" alt="logo">
+                      <img src="../images/BBVA-logo.png" alt="logo">
                     </h1>
                     <div class="buttons">
                         <button class="header__notification">
-                            <img class="notificacion" src="images/notificacion.png" alt="">
+                            <img class="notificacion" src="../images/notificacion.png" alt="">
                         </button>
                         <button class="header__menu" id="header__menu">
                             <span class="burguer"></span>
@@ -41,7 +41,7 @@
                                 <a href="rh-tabla.html" class="menu__opc op1">Lista de candidatos</a>
                                 <a href="rh-agregar.html" class="menu__opc">Agregar candidato</a>
                               
-                                <a href="" class="menu__opc">Carrar seción</a>
+                                <a href="./index.html" class="menu__opc">Carrar seción</a>
                             </nav>
                         </section>
                     </aside>
@@ -50,103 +50,125 @@
             <h2 class="principal__cabecera--titulo">Candidatos</h2>
             <div>
               <input class="principal__cabecera--input"
-
+              id="busqueda"
              type="search"
              placeholder=" "
              >
             </div>
             
           </div>
-          <div class="tabla">
-            
-              <div class="titulo">
-                <p>Nombre
-                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-                </p>
-              </div>
-  
-              <div class="titulo item1">
-                <p>Posición
-                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-  
-                </p>
-              </div>
-  
-              <div class="titulo item1">
-                <p>Entrevistador
-                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-  
-                </p>
-              </div>
-              <div class="titulo">
-                <p>Estatus
-                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-  
-                </p>
-              </div>
-              <div class="titulo">
-                <p>Fecha de entrevista
-                  <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-  
-                </p>
-              </div>
-              <div class="titulo item1">
-               <p></p>
-              </div>
+<!--           
+          <table class="tabla" id="tabla">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Posición</th>
+                <th>Entrevistador</th>
+                <th>Estatus</th>
+                <th>fecha de entrevista</th>
+              </tr>
+            </thead>
+            <tbody ></tbody>
+          </table> -->
+
+          <div class="tabla" >
             
             
-              <div class="item">
-                <p>Jorge Aguilar </p>
-              </div>
-  
-              <div class="item item1">
-                <p>Frontend Developer</p>
-              </div>
-              <div class="item item1">
-                <p>Luis Flores</p>
-              </div>
-              <div class="item">
-                <p>Entrevistado</p>
-              </div>
-              <div class="item">
-               <p>03/09/22</p>
-              </div>
-              <div class="item item1">
-               <img class="tabla__borrar" src="images/Delete.png" alt="">
-               </div>
-  
-            
-            
-              <div class="item">
-                <p>Set Reyes </p>
-              </div>
-  
-              <div class="item item1">
-                <p>Frontend Developer</p>
-              </div>
-              <div class="item item1">
-                <p>Laura Gomez</p>
-              </div>
-              <div class="item">
-                <p>Entrevistado</p>
-              </div>
-              <div class="item ">
-               <p>03/09/22</p>
-              </div>
-              <div class="item item1">
-               <img class="tabla__borrar" src="images/Delete.png" alt="">
-               </div>
+            <div class="titulo">
+              <p>Nombre
+                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+              </p>
             </div>
+
+            <div class="titulo item1">
+              <p>Posición
+                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+
+              </p>
+            </div>
+
+            <div class="titulo item1">
+              <p>Entrevistador
+                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+
+              </p>
+            </div>
+            <div class="titulo">
+              <p>Estatus
+                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+
+              </p>
+            </div>
+            <div class="titulo">
+              <p>Fecha de entrevista
+                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
+
+              </p>
+            </div>
+            <div class="titulo item1">
+             <p></p>
+            </div>
+          
+          <!-- <div class="item" id="item"></div>
+            <div class="item">
+              <p>Jorge Aguilar </p>
+            </div>
+
+            <div class="item item1">
+              <p>Frontend Developer</p>
+            </div>
+            <div class="item item1">
+              <p>Luis Flores</p>
+            </div>
+            <div class="item">
+              <p>Entrevistado</p>
+            </div>
+            <div class="item">
+             <p>03/09/22</p>
+            </div>
+            <div class="item item1">
+             <img class="tabla__borrar" src="images/Delete.png" alt="">
+             </div>
+
+          
+          
+            <div class="item">
+              <p>Set Reyes </p>
+            </div>
+
+            <div class="item item1">
+              <p>Frontend Developer</p>
+            </div>
+            <div class="item item1">
+              <p>Laura Gomez</p>
+            </div>
+            <div class="item">
+              <p>Entrevistado</p>
+            </div>
+            <div class="item ">
+             <p>03/09/22</p>
+            </div>
+            <div class="item item1">
+             <img class="tabla__borrar" src="images/Delete.png" alt="">
+             </div>
+          </div>
+
+          
   
-            
+             -->
              
 
           
 
         </div>
+
+        <div class="tabla" id="tabla">
+
+        </div>
                 </div>
             </div>
         </main>
+        <script src="../js/rh-tabla.js" type="module"></script>
         <script>
             var botonMenu = document.getElementById('header__menu');
             var black = document.getElementById('blackBack');
