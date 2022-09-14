@@ -7,6 +7,7 @@
         <title>Bank Main</title>
         <link rel="stylesheet" href="../css/estilos-generales.css">
         <link rel="stylesheet" href="../css/formCandidatos.css">
+        <script src="../js/form_superUsuario.js"></script>
     </head>
     <body>
         <main>
@@ -51,7 +52,7 @@
                     </aside>
                     <section class="principal formCandidatos">
                         <h2>Registro Candidatos</h2>
-                        <form action="" class="formC">
+                        <form action="" class="formC" id="form">
                             <section class="sectionForm">
                                 <div class="cajaInput">
                                     <label for="nombreRH" class="labelForm">Nombre Recursos Humanos</label>
@@ -65,7 +66,7 @@
                                 </div>
                                 <div class="cajaInput">
                                     <label for="entrevistador" class="labelForm">Entrevistador</label>
-                                    <input type="text" id="entrevistador" name="Entrevistador" placeholder="Entrevistador">
+                                    <input type="text" id="entrevistado" name="Entrevistador" placeholder="Entrevistador">
                                 </div>
                             </section>
                             <section class="sectionForm noMarg">
@@ -79,13 +80,11 @@
                                 </div>
                                 <div class="cajaInput">
                                     <label for="encargado" class="labelForm">Encargado</label>
-                                    <input type="text" id="especialidad" name="Encargado" placeholder="Entrevistador">
+                                    <input type="text" id="encargado" name="Encargado" placeholder="Entrevistador">
                                 </div>
                             </section>
                             <section class="botonera">
-                                <input type="file" id="cv">
-                                <label for="cv">Curriculum Vitae</label>
-                                <input type="submit" value="Guardar">
+                                <input type="submit" value="Guardar" id="guardar" onclick="guardarEntrevista()">
                             </section>
                         </form>
                     </section>
