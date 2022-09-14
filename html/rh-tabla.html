@@ -5,10 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bank Main</title>
+        <!-- Api busquedad en tablas -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
         <link rel="stylesheet" href="../css/estilos-generales.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../css/rh-styles.css">
+        <!-- <link rel="stylesheet" href="../css/style-Tabla-entrevistador.css"> -->
     </head>
     <body>
         <main>
@@ -57,118 +60,37 @@
             </div>
             
           </div>
-<!--           
-          <table class="tabla" id="tabla">
-            <thead>
-              <tr>
-                <th>Nombre</th>
-                <th>Posición</th>
-                <th>Entrevistador</th>
-                <th>Estatus</th>
-                <th>fecha de entrevista</th>
-              </tr>
-            </thead>
-            <tbody ></tbody>
-          </table> -->
+          
+          
 
-          <div class="tabla" >
+          <section class="section_table">
+            <table class="tabla_Candidatos" id="tabla">
+              <thead>
+                <tr>
+                  <tr>
+                    <th class="Nombre_Col Nombre_Col_Cab name">   Nombre <img class="Icon_flecha_candidatos" src="../images/flecha.png" />   </th>
+                    <th class="Posicion_Col Posicion_Col_Cab item1 pos"> Posicion <img class="Icon_flecha_candidatos" src="../images/flecha.png" /> </th>
+                   
+                    <th class=" Estatus_Col_Cab esta">  Estatus <img class="Icon_flecha_candidatos" src="../images/flecha.png" /> </th>
+                    <th class="Registro_Col_Cab fech" >Fecha entrevista <img class="Icon_flecha_candidatos" src="../images/flecha.png" /> </th>
+                    <th class="Boton_Col Boton_Col_Cab item1"><!-- Botones --></th>
+                    <tr>
+                </tr>
+              </thead>
+              <tbody id="lista">
+                
             
-            
-            <div class="titulo">
-              <p>Nombre
-                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-              </p>
-            </div>
+              </tbody>
+            </table>
 
-            <div class="titulo item1">
-              <p>Posición
-                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-
-              </p>
-            </div>
-
-            <div class="titulo item1">
-              <p>Entrevistador
-                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-
-              </p>
-            </div>
-            <div class="titulo">
-              <p>Estatus
-                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-
-              </p>
-            </div>
-            <div class="titulo">
-              <p>Fecha de entrevista
-                <span><svg  class="titulo_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span>
-
-              </p>
-            </div>
-            <div class="titulo item1">
-             <p></p>
-            </div>
-          
-          <!-- <div class="item" id="item"></div>
-            <div class="item">
-              <p>Jorge Aguilar </p>
-            </div>
-
-            <div class="item item1">
-              <p>Frontend Developer</p>
-            </div>
-            <div class="item item1">
-              <p>Luis Flores</p>
-            </div>
-            <div class="item">
-              <p>Entrevistado</p>
-            </div>
-            <div class="item">
-             <p>03/09/22</p>
-            </div>
-            <div class="item item1">
-             <img class="tabla__borrar" src="images/Delete.png" alt="">
-             </div>
-
-          
-          
-            <div class="item">
-              <p>Set Reyes </p>
-            </div>
-
-            <div class="item item1">
-              <p>Frontend Developer</p>
-            </div>
-            <div class="item item1">
-              <p>Laura Gomez</p>
-            </div>
-            <div class="item">
-              <p>Entrevistado</p>
-            </div>
-            <div class="item ">
-             <p>03/09/22</p>
-            </div>
-            <div class="item item1">
-             <img class="tabla__borrar" src="images/Delete.png" alt="">
-             </div>
-          </div>
-
-          
-  
-             -->
-             
-
-          
-
-        </div>
-
-        <div class="tabla" id="tabla">
-
+          </section>
         </div>
                 </div>
             </div>
         </main>
+        <script src="../js/buscar-rh.js"></script>
         <script src="../js/rh-tabla.js" type="module"></script>
+        <script src="../js/ordenar-rh.js"></script>
         <script>
             var botonMenu = document.getElementById('header__menu');
             var black = document.getElementById('blackBack');

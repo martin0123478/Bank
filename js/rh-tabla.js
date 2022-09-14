@@ -1,10 +1,10 @@
 import {busqueda, eliminarCliente} from './API.js'
-const tabla = document.querySelector('#tabla');
-const busca = document.querySelector('#busqueda');
+const tabla = document.querySelector('#lista');
+
 (function(){
   document.addEventListener('DOMContentLoaded',traerData);
 tabla.addEventListener('click',confirmarEliminar);
-busca.addEventListener('keyup',buscar);
+// busca.addEventListener('keyup',buscar);
 function traerData(){
 const url = 'http://localhost:3000/candidatos';
 fetch(url)
@@ -24,33 +24,23 @@ function mostratHTML(datos){
     // console.log(datos.results[0].name)
     
    datos.forEach(candidato => {
-    const { nombre,posicion,entrevistador,fecha,estatus,id} = candidato
-    html +=`
-    <div class="item">
-           <p>${nombre} </p>
-         </div>
-
-         <div class="item item1">
-           <p>${posicion}</p>
-         </div>
-         <div class="item item1">
-           <p>${entrevistador}</p>
-         </div>
-         <div class="item">
-           <p>${estatus}</p>
-         </div>
-         <div class="item">
-          <p>${fecha}</p>
-         </div>
-         <div class="item item1">
-         
-          <img class="tabla__borrar" data-cliente=${id} src="../images/Delete.png" alt="">
+    const { nombre,posicion,entrevistador,fecha,estatus,id} = candidato;
+    const row = document.createElement('tr');
+    row.innerHTML +=`
+    <td class="Nombre_Col">${nombre}</td>
+    <td class="Posicion item1">${posicion}</td>
+   
+    <td class="">${estatus}</td>
+    <td class="">${fecha}</td>
+    <td class="item1"> <img class="tabla__borrar" data-cliente=${id} src="../images/Delete.png" alt="">
+        </td> 
           
-          </div>
+          
    `
+   tabla.appendChild(row)
    }); 
    
-   tabla.innerHTML = html
+   
    
    }
    function confirmarEliminar(e){
@@ -63,12 +53,12 @@ function mostratHTML(datos){
     }
   }
 
- async function buscar(){
-    const cliente = await busqueda(busca.value)
-    mostratHTML(cliente)
-  }
+//  async function buscar(){
+//     const cliente = await busqueda(busca.value)
+//     mostratHTML(cliente)
+//   }
 
-  
+
 
    
    

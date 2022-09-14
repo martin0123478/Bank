@@ -26,12 +26,13 @@
       "fecha": "12/10/22"
     },
     {
-      "id": 2,
-      "nombre": "Set Reyes",
-      "posicion": "Frontend Developer",
-      "entrevistador": "María Gómez",
-      "estatus": "Aceptado",
-      "fecha": "15/10/22"
+      "nombre": "Flor",
+      "posicion": "frontend",
+      "entrevistador": "luisss",
+      "fecha": "2022-09-22",
+      "estatus": "aceptado",
+      "id": 2
     }
-  ]
+  ],
+  "entrevista": []
 }
