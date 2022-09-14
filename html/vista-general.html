@@ -6,24 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bank Main</title>
         <link rel="stylesheet" href="../css/estilos-generales.css">
-
-        <!-- <link rel="stylesheet" href="css/styles.css"> -->
-        <!-- <link rel="stylesheet" href="css/pieChart.css"> -->
-        <!-- <link rel="stylesheet" href="css/barChart.css"> -->
         <link rel="stylesheet" type="text/css" href="../css/style-principal.css">
+        <link rel="stylesheet" type="text/css" href="../iconos/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/pareto.js"></script>
+        <script src="../js/vista-general.js"></script>
+        <script src="../js/buscador-vg.js"></script>
     </head>
     <body>
         <main>
             <div class="container">
                 <header class="header">
                     <h1 class="header__logo">BBVA
-                      <img src="images/BBVA-logo.png" alt="logo">
+                      <img src="../images/BBVA-logo.png" alt="logo">
                     </h1>
                     <div class="buttons">
                         <button class="header__notification">
-                            <img class="notificacion" src="images/notificacion.png" alt="">
+                            <img class="notificacion" src="../images/notificacion.png" alt="">
                         </button>
                         <button class="header__menu" id="header__menu">
                             <span class="burguer"></span>
@@ -38,20 +38,22 @@
                                 <div class="perfilImg">
                                     <img src="" alt="">
                                 </div>
-                                <h2>¡Bienvenido Alan!</h2>
-                                <h6 class="area">Recursos Humanos</h6>
+                                <div id="nombre">
+                                    <h2>¡Bienvenido Jorge!</h2>
+                                </div>
+                                <h6 class="area">Administrador</h6>
                             </div>
                             <nav>
                                 <a href="" class="menu__opc acordion_tit">Admin</a>
                                 <section class="menu__acordion acordion_admin">
-                                    <a href="vista-general.html" class="acordion__opc dashboard">Dashboard</a>
-                                    <a href="graficas_superUsuario.html" class="acordion__opc grafico">Gráfico</a>
+                                    <a href="../html/vista-general.html" class="acordion__opc dashboard">Dashboard</a>
+                                    <a href="../html/graficas_superUsuario.html" class="acordion__opc grafico">Gráfico</a>
                                 </section>
                                 <a href="" class="menu__opc acordion_tit">RH</a>
                                 <section class="menu__acordion acordion acordion_rh">
-                                    <a href="lista-candidatos.html" class="acordion__opc dashboard">Lista de candidatos</a>
+                                    <a href="../html/lista-candidatos.html" class="acordion__opc dashboard">Lista de candidatos</a>
                                 </section>
-                                <a href="index.html" class="menu__opc">Cerrar seción</a>
+                                <a href="../html/index.html" class="menu__opc">Cerrar seción</a>
                             </nav>
                         </section>
                     </aside>
@@ -79,70 +81,9 @@
                                     <th>CV</th>
                                     <th>Opciones</th>
                                 </tr>
-                                <tr>
-                                    <td>Entrevistador1</td>
-                                    <td>26/08/2022</td>
-                                    <td>Entrevitsador1</td>
-                                    <td>Sistemas TI</td>
-                                    <td>3 años</td>
-                                    <td>Ususario RH</td>
-                                    <td>Archivo1.pdf</td>
-                                    <td>
-                                        <select name="opciones" id="opciones" aria-placeholder="Seleccionar" class="option">
-                                            <option value="" class="op">Seleccione</option>
-                                            <option value="" class="op">Editar</option>
-                                            <option value="" class="op">Eliminar</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Entrevistador1</td>
-                                    <td>25/08/2022</td>
-                                    <td>Entrevistador2</td>
-                                    <td>RH</td>
-                                    <td>1 año</td>
-                                    <td>Usuario RH</td>
-                                    <td>Archivo2.pdf</td>
-                                    <td>
-                                        <select name="opciones" id="opciones" aria-placeholder="Seleccionar" class="option">
-                                            <option value="" class="op">Seleccione</option>
-                                            <option value="" class="op">Editar</option>
-                                            <option value="" class="op">Eliminar</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Entrevistador1</td>
-                                    <td>26/08/2022</td>
-                                    <td>Entrevistador3</td>
-                                    <td>RH</td>
-                                    <td>5 años</td>
-                                    <td>Usuario RH</td>
-                                    <td>Archivo3.pdf</td>
-                                    <td>
-                                        <select name="opciones" id="opciones" aria-placeholder="Seleccionar" class="option">
-                                            <option value="" class="op">Seleccione</option>
-                                            <option value="" class="op">Editar</option>
-                                            <option value="" class="op">Eliminar</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Entrevistador1</td>
-                                    <td>27/08/2022</td>
-                                    <td>Entrevistador4</td>
-                                    <td>Sistemas TI</td>
-                                    <td>Sin experiencia</td>
-                                    <td>Usuario RH</td>
-                                    <td>Archivo4.pdf</td>
-                                    <td>
-                                        <select name="opciones" id="opciones" aria-placeholder="Seleccionar" class="option">
-                                            <option value="" class="op">Seleccione</option>
-                                            <option value="" class="op">Editar</option>
-                                            <option value="" class="op">Eliminar</option>
-                                        </select>
-                                    </td>
-                                </tr>
+                                <tbody id="table">
+                                    
+                                </tbody>
                             </table>
                         </div>
                     </section>
@@ -179,7 +120,5 @@
                 });
             }
         </script>
-        <script src="js/pieChart.js"></script>
-        <script src="js/barChart.js"></script>
     </body>
 </html>
