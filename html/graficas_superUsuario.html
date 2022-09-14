@@ -7,11 +7,13 @@
         <title>Bank Main</title>
         <link rel="stylesheet" href="../css/estilos-generales.css">
 
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/styles_graficas.css">
-        <link rel="stylesheet" href="css/pieChart.css">
-        <link rel="stylesheet" href="css/barChart.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/styles_graficas.css">
+        <!-- <link rel="stylesheet" href="../css/pieChart.css"> -->
+        <!-- <link rel="stylesheet" href="../css/barChart.css"> -->
+        <script src="../js/conexion.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
         <script src="https://code.highcharts.com/modules/pareto.js"></script>
     </head>
     <body>
@@ -19,11 +21,11 @@
             <div class="container">
                 <header class="header">
                     <h1 class="header__logo">BBVA
-                      <img src="images/BBVA-logo.png" alt="logo">
+                      <img src="../images/BBVA-logo.png" alt="logo">
                     </h1>
                     <div class="buttons">
                         <button class="header__notification">
-                            <img class="notificacion" src="images/notificacion.png" alt="">
+                            <img class="notificacion" src="../images/notificacion.png" alt="">
                         </button>
                         <button class="header__menu" id="header__menu">
                             <span class="burguer"></span>
@@ -84,7 +86,6 @@
 
             var btnAcordion = document.querySelectorAll('.acordion_tit');
             for (i=0; i<btnAcordion.length;i++){
-                console.log(btnAcordion[i])
                 btnAcordion[i].addEventListener('click',function(event){
                     event.preventDefault();
                     var btn = this;
@@ -92,7 +93,7 @@
                 });
             }
         </script>
-        <script src="js/pieChart.js"></script>
-        <script src="js/barChart.js"></script>
+        <script src="../js/pieChart.js"></script>
+        <script src="../js/barChart.js"></script>
     </body>
 </html>
