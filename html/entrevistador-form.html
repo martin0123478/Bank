@@ -5,10 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bank Main</title>
+        
         <link rel="stylesheet" href="../css/style-Form-entrevistador.css">
-
         <link rel="stylesheet" href="../css/estilos-generales.css">
-
     </head>
     <body>
         <main>
@@ -51,7 +50,7 @@
                         <h2 class="principal__cabecera--titulo"> Frontend Developer - Giovanni Olmos Salmones</h2>
                       </section>
                       <section>
-                        <form>
+                        <form id="formulario" >
                           <label for="Experiencia"> Experiencia </label> <br>
                           <input type="text" id="Experiencia" placeholder="Experiencia laboral"/><br>
                         
@@ -70,7 +69,7 @@
                           <input type="radio" id="cumple_Si" name="cumple_vacante" value="Si"> <label for="html">Si</label>
                           <input type="radio" id="cumple_No" name="cumple_vacante" value="No"> <label for="css">No</label> <br>
                                   
-                          <label for="Nivel_candidato"> Observaciones </label> <br>
+                          <label for="Comentarios"> Observaciones </label> <br>
                           <textarea id="Comentarios" name="comentarios" rows="10" cols="40" placeholder="Observaciones y comentarios"></textarea><br>
                         
                           <input type="submit" class="subir" href="" value="Subir resultados" > </input></p>
@@ -95,5 +94,6 @@
                 menu.classList.remove('open')
             });
         </script>
+        <script src="../js/form-entrevistador.js"></script>
     </body>
 </html>

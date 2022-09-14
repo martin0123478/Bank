@@ -1,13 +1,16 @@
 <!DOCTYPE html>
     <html lang="en">
-    <head>
+    <head id="head1">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bank Main</title>
+
+        <!-- Api busquedad en tablas -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+       
         <link rel="stylesheet" href="../css/style-Tabla-entrevistador.css">
         <link rel="stylesheet" href="../css/estilos-generales.css">
-
     </head>
     <body>
         <main>
@@ -39,7 +42,7 @@
                             <nav>
                                 <a href="entrevistador-Tabla.html" class="menu__opc op1">Lista de candidatos</a>
                                 <!-- <a href="" class="menu__opc">Agregar candidato</a> -->
-                                <a href="entrevistador-form.html" class="menu__opc">Opciones</a>
+                                <a href="" class="menu__opc">Opciones</a>
                                 <a href="index.html" class="menu__opc">Carrar seción</a>
                             </nav>
                         </section>
@@ -52,7 +55,7 @@
                         </div>
                         <div class="div_cabecera_cabecera">
                           <img class="Icon-search" src="../images/lupa.png"/>
-                          <input class="principal__cabecera--input" type="text" src="images/lupa.png" placeholder="Buscar candidato..." />
+                          <input id="buscador" class="principal__cabecera--input" type="text" src="images/lupa.png" placeholder="Buscar candidato..." />
                         </div>
                     </section>
             
@@ -62,41 +65,41 @@
                           <caption></caption>
                             <thead>
                                 <tr>
-                                    <th class="Nombre_Col">   Nombre   <img class="Icon_flecha_candidatos" src="images/flecha.png" /> </th>
-                                    <th class="Posicion_Col"> Posicion <img class="Icon_flecha_candidatos" src="images/flecha.png" /> </th>
-                                    <th class="Registro_Col" >Registro <img class="Icon_flecha_candidatos" src="images/flecha.png" /> </th>
-                                    <th class="Estatus_Col">  Estatus  <img class="Icon_flecha_candidatos" src="images/flecha.png" /> </th>
+                                    <th class="Nombre_Col Nombre_Col_Cab">   Nombre   <img class="Icon_flecha_candidatos" src="../images/flecha.png" /> </th>
+                                    <th class="Posicion_Col Posicion_Col_Cab"> Posicion <img class="Icon_flecha_candidatos" src="../images/flecha.png" /> </th>
+                                    <th class="Registro_Col Registro_Col_Cab" >Registro <img class="Icon_flecha_candidatos" src="../images/flecha.png" /> </th>
+                                    <th class="Estatus_Col Estatus_Col_Cab">  Estatus  <img class="Icon_flecha_candidatos" src="../images/flecha.png" /> </th>
                                     <th class="Boton_Col"><!-- Botones --></th>
                                     <tr>
                             </thead>
-                            <tbody>
+                            <tbody id="myTable">
                                 <tr class="row-candidato">
                                     <td class="Nombre_Col">Alan Josue López López</td>
                                     <td class="Posicion_Col">Frontend Developer</td>
                                     <td class="Registro_Col">22/08/2022</td>
                                     <td class="Estatus_Col">Por revisar</td>
-                                    <td class="Boton_Col"><button class="button_candidatos" type="submit"><img class="Icon_button_candidatos" src="../images/ver.png" /> Ver perfil </button></td>
+                                    <td class="Boton_Col"><a class="button_candidatos" href="index-Form.html"><img class="Icon_button_candidatos" src="../images/ver.png" /> Ver perfil </a></td>
                                 </tr>
                                 <tr class="row-candidato">
                                     <td class="Nombre_Col">Jorge Aguilar Hernandez</td>
                                     <td class="Posicion_Col">Frontend Developer</td>
                                     <td class="Registro_Col">25/08/2022</td>
                                     <td class="Estatus_Col">Por revisar</td>
-                                    <td class="Boton_Col"><button class="button_candidatos" type="submit"><img class="Icon_button_candidatos" src="../images/ver.png" /> Ver perfil </button></td>
+                                    <td class="Boton_Col"><a class="button_candidatos" href="index-Form.html"><img class="Icon_button_candidatos" src="../images/ver.png" /> Ver perfil </a></td>
                                 </tr>
                                 <tr class="row-candidato">
                                     <td class="Nombre_Col">Set Reyes Sandoval</td>
                                     <td class="Posicion_Col">Frontend Developer</td>
                                     <td class="Registro_Col">20/08/2022</td>
                                     <td class="Estatus_Col">En revisión</td>
-                                    <td class="Boton_Col"><button class="button_candidatos" type="submit"><img class="Icon_button_candidatos" src="../images/edit.png" /> Editar </button></td>
+                                    <td class="Boton_Col"><a class="button_candidatos" href="index-Form.html"><img class="Icon_button_candidatos" src="../images/edit.png" /> Editar </a></td>
                                 </tr>
                                 <tr class="row-candidato">
                                   <td class="Nombre_Col">Giovanni Olmos salmones</td>
                                   <td class="Posicion_Col">Frontend Developer</td>
                                   <td class="Registro_Col">05/09/2022</td>
                                   <td class="Estatus_Col">En revisión</td>
-                                  <td class="Boton_Col"><button class="button_candidatos" type="submit"><img class="Icon_button_candidatos" src="../images/edit.png" /> Editar </button></td>
+                                  <td class="Boton_Col"><a class="button_candidatos" href="index-Form.html"><img class="Icon_button_candidatos" src="../images/edit.png" /> Editar </a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -121,5 +124,9 @@
             });
 
         </script>
+        <script src="../js/search-entrevistador.js"></script>
+        <script src="../js/table-entrevistador.js"></script>
+        <script src="../js/orderTable-entrevistador.js"></script>
+        
     </body>
 </html>

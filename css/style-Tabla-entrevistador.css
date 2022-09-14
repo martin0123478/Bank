@@ -85,7 +85,7 @@
 }
 
 .tabla_Candidatos tbody tr:hover{
-  background-color: gray;
+  background-color: rgb(188, 182, 182);
 }
 
 thead th{
