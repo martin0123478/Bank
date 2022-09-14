@@ -1,0 +1,90 @@
+.principal.formCandidatos{
+    padding: 1rem 1.5rem;
+    background-color: #F5F5F5;
+}
+
+.principal.formCandidatos h2{
+    color: #000000;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.sectionForm{
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+.sectionForm.noMarg{
+    margin-bottom: 0;
+}
+.formC{
+    margin: 1rem auto 0;
+}
+.labelForm{
+    display: block;
+    color: #000000;
+    font-size: 0.875rem;
+    font-family: 'Inter';
+}
+.cajaInput{
+    max-width: 300px;
+    margin-bottom: .25rem;
+}
+.cajaInput input{
+    width: 100%;
+    padding: 10px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #070708;
+    border-radius: 5px;
+}
+.cajaInput input::placeholder{
+    color: #D2D2D2;
+}
+input[type="file"]{
+    display: none;
+}
+input[type="file"] + label{
+    display: block;
+    height: 44px;
+    padding: 10px 15px;
+    margin: 1rem 0 0;
+    max-width: 149px;
+    color: var(--color-terciario);
+    font-size: 0.875rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #006EC1;
+}
+input[type="submit"]{
+    height: 44px;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 1rem 0 0;
+    max-width: 149px;
+    color: var(--color-terciario);
+    font-size: 0.875rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #006EC1;
+}
+
+@media only screen and (max-width:768px){
+    .principal.formCandidatos h2{
+        font-size: 1.75rem;
+        text-align: left;
+    }
+    .formC{
+        padding: 0 2rem;
+    }
+    .cajaInput{
+        max-width: initial;
+    }
+    .cajaInput input{
+        border-width: 1px 1px 0 1px;
+        border-radius: 5px 5px 0 0;
+    }
+    input[type="file"] + label{
+        margin: 0;
+    }
+}
