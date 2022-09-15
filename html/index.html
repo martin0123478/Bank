@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style-login.css">
+    <script src="../js/index.js"></script>
 </head>
 <body>
     <header class="header">
@@ -16,7 +17,7 @@
     <h2 class="titulo">Login</h2>
     <div class="content">
         <div class="container">
-            <form class="formulario">
+            <form class="formulario" method="POST">
                 <div class="">
                     <img class="user" src="../images/user-icon.png">
                 </div>
@@ -24,9 +25,9 @@
                     <label for="email" class="label">Email</label>
                     <input type="text" placeholder="Email" id="email">
                     <label for="password" class="label password">Password</label>
-                    <input type="password" placeholder="Password" id="">
+                    <input type="password" placeholder="Password" id="password">
                 </div>
-                <input type="submit" class="boton" value="Ingresar">
+                <input type="button" class="boton" value="Ingresar" id="boton" onclick="login()">
             </form>
             <div class="imagenApoyo">
                 <img src="../images/login.png">
