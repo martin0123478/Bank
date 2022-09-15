@@ -1,7 +1,7 @@
 # Aplicación para gestionar candidatos de Recursos Humanos, Entrevistas y Admin
 
 ## Tecnologías:
-- HTMLS
+- HTML
 - CSS
 - Javascript
 
