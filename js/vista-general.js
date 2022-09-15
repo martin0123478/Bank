@@ -1,10 +1,10 @@
-var arrayOpciones = new Array();
-
 window.onload = async function () {
     consumoAPI();
 }
 
-
+function formulario(){
+    window.location = "../html/formulario_superUsuario.html";
+}
 
 function consumoAPI() {
     const api_url = "http://localhost:3000/entrevista";
@@ -41,21 +41,40 @@ function mostrarHTML(datos) {
                         <td>${encargado}</td>
                         <td>${cv}</td>
                         <td>
-                            <select name="opciones" id="opcionesEE" aria-placeholder="Seleccionar" class="option" onChange="eliminarEditar()">
-                                <option hidden selected>Seleccione</option>
-                                <option value="editar" class="op eliminar">Eliminar</option>
-                                <option value="eliminar" class="op editar">Editar</option>
+                            <select name="ops" id="opciones${id}" class="option" onChange="eliminarEditar(${id})">
+                                <option disable selected hidden>Seleccione</option>
+                                <option value="eliminar" class="op eliminar">Eliminar</option>
+                                <option value="editar" class="op editar">Editar</option>
                             </select>
                         </td>
                     </tr>`
         tabla.innerHTML = filadatos;
     });
-
-    tabla.addEventListener('click',eliminarEditar);
 }
 
-function eliminarEditar(e) {
-    if(e.target.classList.contains('eliminar')){
-        console.log('Eliminar');
+function eliminarEditar(id) {
+    let op = document.querySelector(`#opciones${id}`).value;
+    if(op == 'eliminar'){
+        console.log(id);
+        fetch(`http://localhost:3000/entrevista/${id}`, {
+            method: 'DELETE'
+        })
+        window.location.reload();
+    }else{
+        let url = `../html/editar-entrevista.html?id=${id}`;
+        location.href = url;
     }
+
+    /* if(option == 'editar'){
+            const datos = fetch(`http://localhost:3000/entrevista/${id}`)
+            .then((response) => response.json())
+            .then((json) => {
+                document.getElementById("nombreRH").value = json.entrevistador;
+                document.getElementById("fecha").value = json.fecha;
+                document.getElementById("entrevistado").value = json.entrevistado;
+                document.getElementById("especialidad").value = json.especialidad;
+                document.getElementById("experiencia").value = json.experiencia;
+                document.getElementById("encargado").value = json.encargado;
+            }); 
+    } */
 }
