@@ -6,8 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bank Main</title>
         <link rel="stylesheet" href="../css/estilos-generales.css">
-
+        <link rel="stylesheet" type="text/css" href="../iconos/style.css">
         <link rel="stylesheet" type="text/css" href="../css/styles-candidatos-admin.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../js/lista-candidatos.js"></script>
+        <script src="../js/buscador-lca.js"></script>
        
     </head>
     <body>
@@ -15,7 +18,7 @@
             <div class="container">
                 <header class="header">
                     <h1 class="header__logo">BBVA
-                      <img src="images/BBVA-logo.png" alt="logo">
+                      <img src="../images/BBVA-logo.png" alt="logo">
                     </h1>
                     <div class="buttons">
                         <button class="header__notification">
@@ -34,20 +37,20 @@
                                 <div class="perfilImg">
                                     <img src="" alt="">
                                 </div>
-                                <h2>¡Bienvenido Alan!</h2>
-                                <h6 class="area">Recursos Humanos</h6>
+                                <h2>¡Bienvenido Jorge!</h2>
+                                <h6 class="area">Administrador</h6>
                             </div>
                             <nav>
                                 <a href="" class="menu__opc acordion_tit">Admin</a>
                                 <section class="menu__acordion acordion_admin">
-                                    <a href="../vista-principal/index.html" class="acordion__opc dashboard">Dashboard</a>
-                                    <a href="../graficas_superUsuario.html" class="acordion__opc grafico">Gráfico</a>
+                                    <a href="../html/vista-general.html" class="acordion__opc dashboard">Dashboard</a>
+                                    <a href="../html/graficas_superUsuario.html" class="acordion__opc grafico">Gráfico</a>
                                 </section>
                                 <a href="" class="menu__opc acordion_tit">RH</a>
                                 <section class="menu__acordion acordion acordion_rh">
-                                    <a href="../lista-candidatos/index.html" class="acordion__opc dashboard">Lista de candidatos</a>
+                                    <a href="../html/lista-candidatos.html" class="acordion__opc dashboard">Lista de candidatos</a>
                                 </section>
-                                <a href="../login/index.html" class="menu__opc">Cerrar seción</a>
+                                <a href="../html/index.html" class="menu__opc">Cerrar seción</a>
                             </nav>
                         </section>
                     </aside>
@@ -60,7 +63,7 @@
                             </div>
                         </div>
                         <div class="contenido">
-                            <table>
+                            <table id="table">
                                 <tr>
                                     <th>Nombre</th>
                                     <th>Posicion</th>
@@ -68,42 +71,45 @@
                                     <th>Estatus</th>
                                     <th></th>
                                 </tr>
-                                <tr>
-                                    <td>Alan Jose Lopez Lopez</td>
-                                    <td>Frontend Developer</td>
-                                    <td>22/08/2022</td>
-                                    <td>Por revisar</td>
-                                    <td>
-                                        <div class="eye-section">
-                                            <input class="option-view" type="button" value="Ver perfil">
-                                            <span class="icon icon-eye"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Jorge Aguilar Hernandez</td>
-                                    <td>Frontend Developer</td>
-                                    <td>25/08/2022</td>
-                                    <td>Por revisar</td>
-                                    <td>
-                                        <div class="eye-section">
-                                            <input class="option-view" type="button" value="Ver perfil">
-                                            <span class="icon icon-eye"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Set Reyes Sandoval</td>
-                                    <td>Frontend Developer</td>
-                                    <td>25/08/2022</td>
-                                    <td>Por revisar</td>
-                                    <td>
-                                        <div class="eye-section">
-                                            <input class="option-view" type="button" value="Ver perfil">
-                                            <span class="icon icon-eye"></span>
-                                        </div>
-                                    </td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>Alan Jose Lopez Lopez</td>
+                                        <td>Frontend Developer</td>
+                                        <td>22/08/2022</td>
+                                        <td>Por revisar</td>
+                                        <td>
+                                            <div class="eye-section">
+                                                <input class="option-view" type="button" value="Ver perfil">
+                                                <span class="icon icon-eye"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jorge Aguilar Hernandez</td>
+                                        <td>Frontend Developer</td>
+                                        <td>25/08/2022</td>
+                                        <td>Por revisar</td>
+                                        <td>
+                                            <div class="eye-section">
+                                                <input class="option-view" type="button" value="Ver perfil">
+                                                <span class="icon icon-eye"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Set Reyes Sandoval</td>
+                                        <td>Frontend Developer</td>
+                                        <td>25/08/2022</td>
+                                        <td>Por revisar</td>
+                                        <td>
+                                            <div class="eye-section">
+                                                <input class="option-view" type="button" value="Ver perfil">
+                                                <span class="icon icon-eye"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
                             </table>
                         </div>
                     </section>

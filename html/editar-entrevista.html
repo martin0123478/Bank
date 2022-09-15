@@ -7,7 +7,7 @@
         <title>Bank Main</title>
         <link rel="stylesheet" href="../css/estilos-generales.css">
         <link rel="stylesheet" href="../css/formCandidatos.css">
-        <script src="../js/form_superUsuario.js"></script>
+        <script src="../js/editar-entevista.js"></script>
     </head>
     <body>
         <main>
@@ -56,35 +56,35 @@
                             <section class="sectionForm">
                                 <div class="cajaInput">
                                     <label for="nombreRH" class="labelForm">Nombre Recursos Humanos</label>
-                                    <input type="text" id="nombreRH" name="Nombre RH" placeholder="Nombre">
+                                    <input type="text" id="nombreRH" name="Nombre RH" placeholder="Nombre" value="">
                                 </div>
                             </section>
                             <section class="sectionForm">
                                 <div class="cajaInput">
                                     <label for="fecha" class="labelForm">Fecha</label>
-                                    <input type="text" id="fecha" name="Fecha"  placeholder="Posición">
+                                    <input type="text" id="fecha" name="Fecha"  placeholder="Posición" value="">
                                 </div>
                                 <div class="cajaInput">
                                     <label for="entrevistador" class="labelForm">Entrevistador</label>
-                                    <input type="text" id="entrevistado" name="Entrevistador" placeholder="Entrevistador">
+                                    <input type="text" id="entrevistado" name="Entrevistador" placeholder="Entrevistador" value="">
                                 </div>
                             </section>
                             <section class="sectionForm noMarg">
                                 <div class="cajaInput">
                                     <label for="especialidad" class="labelForm">Especialidad</label>
-                                    <input type="text" id="especialidad" name="Especialidad" placeholder="Entrevistador">
+                                    <input type="text" id="especialidad" name="Especialidad" placeholder="Entrevistador" value="">
                                 </div>
                                 <div class="cajaInput">
                                     <label for="experiencia" class="labelForm">Experiencia</label>
-                                    <input type="text" id="experiencia" name="Experiencia" placeholder="Entrevistador">
+                                    <input type="text" id="experiencia" name="Experiencia" placeholder="Entrevistador" value="">
                                 </div>
                                 <div class="cajaInput">
                                     <label for="encargado" class="labelForm">Encargado</label>
-                                    <input type="text" id="encargado" name="Encargado" placeholder="Entrevistador">
+                                    <input type="text" id="encargado" name="Encargado" placeholder="Entrevistador" value="">
                                 </div>
                             </section>
                             <div class="botonera">
-                                <input type="button" value="Guardar" id="guardar" onclick="registrar()">
+                                <input type="button" value="Guardar" id="guardar" onclick="editar()">
                             </div>
                         </form>
                     </section>
