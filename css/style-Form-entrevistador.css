@@ -1,163 +1,163 @@
 /* Formulario*/
 
-    .principal{
-        width: 100%;
-        height: 100%;
-    }
+.principal{
+  width: 100%;
+  height: 100%;
+}
 
-  .principal__cabecera{
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
+.principal__cabecera{
+height: auto;
+display: flex;
+flex-direction: row;
+flex-flow: wrap;
 
-    /* Distancia entre cabecera y formulario*/
-    margin-bottom: 10px;  
-    padding-left: 10px;
-  }
-  
-  .principal__cabecera--titulo{
-    height: auto;
-    font-size: 1.4rem;
-  }
-  
-  input, select, option {
-    width: 668px;
-    height: 40px;
-    border-radius: 5px;
-    padding-left: 10px;
-  
-    margin-bottom: 20px;
-    margin-top: 5px;
-    border: 1px solid black;
-  
-  }
-  
-  #cumple_Si, #cumple_No {
-    width: 20px;
-    height: 20px;
-  
-    margin-bottom: 20px;
-    margin-top: 5px;
-   
-  }
-  
-  textarea {
-    width: 668px;
-    height: 120px;
-    border-radius: 8px;
-  
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 668px;
-  
-    margin-bottom: 20px;
-    margin-top: 5px;
-  
-    border: 1px solid black;
-    
-    padding-left: 10px;
-    padding-top: 5px;
-  }
-  
-  label {
-    width: 668px;
-    height: 27px;
-    margin-top: 5px;
-    padding-top: 5px;
-    font-size: 15px;
-  }
-  
-  /* Button */
-  .subir {
+/* Distancia entre cabecera y formulario*/
+margin-bottom: 10px;  
+padding-left: 10px;
+}
 
-    z-index: 1;
-    border-radius: 5px;
-    background-color: var(--color-botones);
-    width: 150px;
-    height: 35px;
-    border: none;
-  
-    /* Text */
-    font-weight: 400px;
-    font-size: 16px;
-    color: #fff; 
-  
-    position:relative;
-    left: 520px;
-    
-  }
+.principal__cabecera--titulo{
+height: auto;
+font-size: 1.4rem;
+}
 
-  .subir:hover {
-    background-color: var(--color-primario);
-  }
+input, select, option {
+width: 668px;
+height: 40px;
+border-radius: 5px;
+padding-left: 10px;
 
-  .subir:active {
-    transform: scale(0.95);
-  }
+margin-bottom: 20px;
+margin-top: 5px;
+border: 1px solid black;
 
-  /* Form */
-  form {
-    box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 50px;
-  }
+}
+
+#cumple_Si, #cumple_No {
+width: 20px;
+height: 20px;
+
+margin-bottom: 20px;
+margin-top: 5px;
+
+}
+
+textarea {
+width: 668px;
+height: 120px;
+border-radius: 8px;
+
+min-height: 100px;
+max-height: 200px;
+max-width: 668px;
+
+margin-bottom: 20px;
+margin-top: 5px;
+
+border: 1px solid black;
+
+padding-left: 10px;
+padding-top: 5px;
+}
+
+label {
+width: 668px;
+height: 27px;
+margin-top: 5px;
+padding-top: 5px;
+font-size: 15px;
+}
+
+/* Button */
+.subir {
+
+z-index: 1;
+border-radius: 5px;
+background-color: var(--color-botones);
+width: 150px;
+height: 35px;
+border: none;
+
+/* Text */
+font-weight: 400px;
+font-size: 16px;
+color: #fff; 
+
+position:relative;
+left: 520px;
+
+}
+
+.subir:hover {
+background-color: var(--color-primario);
+}
+
+.subir:active {
+transform: scale(0.95);
+}
+
+/* Form */
+form {
+box-sizing: border-box;
+padding-left: 10px;
+padding-right: 50px;
+}
 
 /* 768px */
 @media screen and (max-width:940px) {
-    .menu{
-      display: none;
-    }
-  
-    .header{
-      height: 69px;
-    }
-  
-    .notificacion{
-      max-width: 35px;
-    }
-    
-    .notificacion2{
-      display: inline;
-      max-width: 20px;
-    }
-  
-    .logo{
-      max-width: 80px;
-    }
-  
-    .principal__cabecera--titulo {
-      width: 40%;
-    }
-  
-    /*responsive form*/
-    form {
-      width: 100%;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .principal__cabecera--titulo{
-      padding-left: 10px;
-      height: auto;
-      width: auto;
-    }
-  
-    input,select,textarea {
-      width: 100%;
-      resize: none;
-    }
-  
-    textarea{
-      overflow: scroll;
-    }
-  
-   
-    .subir {
-      position:relative;
-      left: auto;
-    }
-  
-  }
+.menu{
+display: none;
+}
+
+.header{
+height: 69px;
+}
+
+.notificacion{
+max-width: 35px;
+}
+
+.notificacion2{
+display: inline;
+max-width: 20px;
+}
+
+.logo{
+max-width: 80px;
+}
+
+.principal__cabecera--titulo {
+width: 40%;
+}
+
+/*responsive form*/
+form {
+width: 100%;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.principal__cabecera--titulo{
+padding-left: 10px;
+height: auto;
+width: auto;
+}
+
+input,select,textarea {
+width: 100%;
+resize: none;
+}
+
+textarea{
+overflow: scroll;
+}
+
+
+.subir {
+position:relative;
+left: auto;
+}
+
+}
 
 /* ------------------ */

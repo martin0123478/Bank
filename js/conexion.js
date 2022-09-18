@@ -3,7 +3,7 @@ window.onload = function(){
 }
 
 function obtenerData(){
-    const url = 'https://jsonplaceholder.typicode.com/users'; 
+    const url = 'http://localhost:3000/entrevista'; 
     fetch(url)
     .then(response => response.json())
     //.then(json => console.log(json))
@@ -18,9 +18,12 @@ function getData(info){
 }
 
 let entrevistadores = [];
+
 function getEntrevistadores(info){
+    console.log(info)
     for (let i = 0; i < 4; i++){
-        let alias = info[i].username;
+        let alias = info[i].entrevistador;
+        console.log(alias)
         let porcentaje = (info[i].id) * 10;
         let nuevoEntrevistador = new entrevistador(alias, porcentaje);
         entrevistadores.push(nuevoEntrevistador);
@@ -33,9 +36,9 @@ const cantidad = [];
 function getEntrevistados(info){
     //console.log(info);
     for (let j = 0; j < info.length; j++){
-        let nombre = info[j].name;
+        let nombre = info[j].entrevistador;
         entrevistados.push(nombre);
-        let barraInfo = info[j].address.suite;
+        let barraInfo = info[j].fecha;
         let sub = parseInt(barraInfo.substr(barraInfo.length - 2));
         cantidad.push(sub);
     }

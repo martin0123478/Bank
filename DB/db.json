@@ -18,21 +18,125 @@
   },
   "candidatos": [
     {
-      "id": 1,
       "nombre": "Martín Aguilar",
       "posicion": "Frontend Developer",
       "entrevistador": "Juan Lopez",
       "estatus": "Aceptado",
-      "fecha": "12/10/22"
+      "fecha": "12/10/22",
+      "experiencia": "1",
+      "tecnologias": "junior",
+      "nivel_candidato": "Programador senior",
+      "cumple_Si": true,
+      "cumple_No": false,
+      "comentarios": "si",
+      "id": 1
     },
     {
-      "nombre": "Flor",
-      "posicion": "frontend",
-      "entrevistador": "luisss",
-      "fecha": "2022-09-22",
-      "estatus": "aceptado",
+      "nombre": "Martín Aguilar",
+      "posicion": "Frontend Developer",
+      "entrevistador": "Juan Lopez",
+      "estatus": "Aceptado",
+      "fecha": "12/10/22",
+      "experiencia": "5000000000",
+      "tecnologias": "jr",
+      "nivel_candidato": "Programador semi senior",
+      "cumple_Si": false,
+      "cumple_No": true,
+      "comentarios": "rechazado",
       "id": 2
+    },
+    {
+      "nombre": "maria",
+      "posicion": "backend",
+      "entrevistador": "luis",
+      "estatus": "si",
+      "fecha": "2022-10-06",
+      "experiencia": "100000",
+      "tecnologias": "jr",
+      "nivel_candidato": "Programador senior",
+      "cumple_Si": false,
+      "cumple_No": true,
+      "comentarios": "aa",
+      "id": 3
+    },
+    {
+      "nombre": "Juan",
+      "posicion": "top",
+      "entrevistador": "asas",
+      "estatus": "si",
+      "fecha": "2022-10-12",
+      "experiencia": "1000000",
+      "tecnologias": "tgfg",
+      "nivel_candidato": "Programador junior",
+      "cumple_Si": true,
+      "cumple_No": false,
+      "comentarios": "siii",
+      "id": 4
     }
   ],
-  "entrevista": []
+  "entrevista": [
+    {
+      "id": 2,
+      "entrevistador": "juanit",
+      "fecha": "2022-09-12",
+      "entrevistado": "Julia",
+      "especialidad": "Informatica",
+      "experiencia": "2 años",
+      "encargado": "el chapo",
+      "cv": "cv.pdf"
+    },
+    {
+      "id": 3,
+      "entrevistador": "Pedro",
+      "fecha": "2022-09-12",
+      "entrevistado": "Belen",
+      "especialidad": "Sistemas",
+      "experiencia": "1 año",
+      "encargado": "Arturo",
+      "cv": "cv3.pdf"
+    },
+    {
+      "id": 4,
+      "entrevistador": "Yair",
+      "fecha": "2022-09-12",
+      "entrevistado": "Jose",
+      "especialidad": "Ingeniero TI",
+      "experiencia": "2 año",
+      "encargado": "Tonatiuh",
+      "cv": "cv.pdf"
+    },
+    {
+      "id": 5,
+      "entrevistador": "florecita",
+      "fecha": "2022-10/25",
+      "entrevistado": "Julia",
+      "especialidad": "Informatica",
+      "experiencia": "5",
+      "encargado": "el chapo",
+      "cv": "cv.pdf"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Jorge",
+      "correo": "jorge@mail.com",
+      "password": "1234",
+      "tipoUsuario": "admin"
+    },
+    {
+      "id": 2,
+      "nombre": "Giovanni",
+      "correo": "giovanni@mail.com",
+      "password": "1234",
+      "tipoUsuario": "entrevistador"
+    },
+    {
+      "id": 3,
+      "nombre": "Martin",
+      "correo": "martin@mail.com",
+      "password": "1234",
+      "tipoUsuario": "rh"
+    }
+  ]
 }

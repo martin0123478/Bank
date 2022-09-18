@@ -8,7 +8,7 @@ setTimeout(() => {
             type: 'column'
         },
         title: {
-            text: 'Titulo del grafico'
+            text: 'Entrevistadores'
         },
         tooltip: {
             shared: true

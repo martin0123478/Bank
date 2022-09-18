@@ -7,6 +7,7 @@
         <title>Bank Main</title>
         <link rel="stylesheet" href="../css/estilos-generales.css">
         <link rel="stylesheet" href="../css/formCandidatos.css">
+        
         <script src="../js/form_superUsuario.js"></script>
     </head>
     <body>
@@ -83,8 +84,11 @@
                                     <input type="text" id="encargado" name="Encargado" placeholder="Entrevistador">
                                 </div>
                             </section>
+                            
                             <div class="botonera">
-                                <input type="button" value="Guardar" id="guardar" onclick="registrar()">
+                                <input type="file"  id="guardar" style="display: none;" >
+                                <label for="guardar">CV</label>
+                                <input  type="button" value="Guardar" id="guardar" onclick="registrar()">
                             </div>
                         </form>
                     </section>
