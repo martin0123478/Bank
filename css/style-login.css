@@ -74,6 +74,16 @@ h2{
     border-radius: 4px;
     box-shadow: 0 4px 4px rgba(0,0,0,.5);
 }
+.boton{
+    padding-left: 5px;
+    text-align: left;
+    width: 260px;
+    height: 40px;
+    background-color: #89D1F3;
+    margin-top: 15px;
+    border: 1px solid #89D1F3;
+    border-radius: 5px;
+}
 .user{
     width: 60px;
     display: block;
